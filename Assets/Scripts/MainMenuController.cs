@@ -1,17 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(Collider))]
-public class MeshButton : MonoBehaviour 
+public class MainMenuController : MonoBehaviour 
 {
-    #region Variables
-    /// <summary>
-    /// <para>The method that is called when the button is clicked</para>
-    /// </summary>
-    [SerializeField]
-    private UnityEvent OnClick;
+	#region Variables
+	
 	#endregion
 
 	#region Properties
@@ -50,21 +45,20 @@ public class MeshButton : MonoBehaviour
 	{
 		
 	}
-
-    /// <summary>
-    /// This is called when the user has pressed the mouse button while over the GUIElement or Collider
-    /// </summary>
-    private void OnMouseDown()
-    {
-        OnClick.Invoke();
-    }
     #endregion
 
     #region Methods
-
-    #endregion
-
-    #region Coroutines
-
-    #endregion
+    /// <summary>
+    /// Load the given scene
+    /// </summary>
+    /// <param name="scene">The scene to load</param>
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+	#endregion
+	
+	#region Coroutines
+	
+	#endregion
 }

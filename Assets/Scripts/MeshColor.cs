@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-[RequireComponent(typeof(Collider))]
-public class MeshButton : MonoBehaviour 
+[RequireComponent(typeof(MeshRenderer))]
+public class MeshColor : MonoBehaviour 
 {
     #region Variables
     /// <summary>
-    /// <para>The method that is called when the button is clicked</para>
+    /// <para>The color of the material</para>
     /// </summary>
     [SerializeField]
-    private UnityEvent OnClick;
+    private Color color;
+
+    /// <summary>
+    /// <para>The Mesh Renderer component attached</para>
+    /// </summary>
+    private MeshRenderer _meshRenderer;
 	#endregion
 
 	#region Properties
@@ -24,7 +28,8 @@ public class MeshButton : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-		
+        _meshRenderer = GetComponent<MeshRenderer>();
+        _meshRenderer.material.color = color;
 	}
 	
 	/// <summary>
@@ -50,21 +55,13 @@ public class MeshButton : MonoBehaviour
 	{
 		
 	}
-
-    /// <summary>
-    /// This is called when the user has pressed the mouse button while over the GUIElement or Collider
-    /// </summary>
-    private void OnMouseDown()
-    {
-        OnClick.Invoke();
-    }
-    #endregion
-
-    #region Methods
-
-    #endregion
-
-    #region Coroutines
-
-    #endregion
+	#endregion
+	
+	#region Methods
+	
+	#endregion
+	
+	#region Coroutines
+	
+	#endregion
 }
