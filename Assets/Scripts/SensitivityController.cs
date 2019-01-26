@@ -39,6 +39,7 @@ public class SensitivityController : MonoBehaviour
             Destroy(this);
         }
 
+        _controller = FindObjectOfType<FirstPersonController>();
         SetSensitivity(PlayerPrefs.HasKey("Sound") ? PlayerPrefs.GetFloat("Sound") : 0.5f);
     }
 
@@ -74,8 +75,8 @@ public class SensitivityController : MonoBehaviour
     /// <param name="level">The relative level of the sensitivity</param>
     public void SetSensitivity(float level)
     {
-        //_controller.m_MouseLook.XSensitivity = 4.5f * Mathf.Pow(level, 2) + 0.5f;
-        //_controller.m_MouseLook.YSensitivity = 4.5f * Mathf.Pow(level, 2) + 0.5f;
+        _controller.m_MouseLook.XSensitivity = 4.5f * Mathf.Pow(level, 2) + 0.5f;
+        _controller.m_MouseLook.YSensitivity = 4.5f * Mathf.Pow(level, 2) + 0.5f;
     }
 	#endregion
 	

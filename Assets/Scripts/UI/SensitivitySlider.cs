@@ -32,8 +32,8 @@ public class SensitivitySlider : Slider
         // Set given level
         if (SensitivityController.Instance != null)
         {
-            Debug.Log(SensitivityController.Instance.SoundLevel);
-            value = SensitivityController.Instance.SoundLevel;
+            Debug.Log(SensitivityController.Instance.Sensitivity);
+            value = SensitivityController.Instance.Sensitivity;
         }
     }
 
