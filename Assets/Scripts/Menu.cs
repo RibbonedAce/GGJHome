@@ -140,12 +140,13 @@ public class Menu : MonoBehaviour
                 }
             }
         }
-
+        
         // Do progressive movement
         for (float t = 0f; t < 1f / cameraSpeed; t += Time.deltaTime)
         {
-            camTransform.position = Vector3.Lerp(oldPos, newPos, Utils.SineCurve(t * cameraSpeed));
-            camTransform.rotation = Quaternion.Slerp(oldRot, newRot, Utils.SineCurve(t * cameraSpeed));
+            float current = Utils.SineCurve(t * cameraSpeed);
+            camTransform.position = Vector3.Lerp(oldPos, newPos, current);
+            camTransform.rotation = Quaternion.Slerp(oldRot, newRot, current);
             yield return null;
         }
 

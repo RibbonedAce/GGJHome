@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour 
 {
-	#region Variables
-	
+    #region Variables
+    /// <summary>
+    /// <para>The image used to fade the screen</para>
+    /// </summary>
+    [SerializeField]
+    private Image maskImage;
 	#endregion
 
 	#region Properties
@@ -19,7 +24,10 @@ public class MainMenuController : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-		
+		if (maskImage != null)
+        {
+            maskImage.color = Color.clear;
+        }
 	}
 	
 	/// <summary>
@@ -54,11 +62,29 @@ public class MainMenuController : MonoBehaviour
     /// <param name="scene">The scene to load</param>
     public void LoadScene(string scene)
     {
+        StartCoroutine(TransitionScene(scene));
+    }
+    #endregion
+
+    #region Coroutines
+    /// <summary>
+    /// Do things then load the given scene
+    /// </summary>
+    /// <param name="scene">The scene to load</param>
+    /// <returns>The time to do things</returns>
+    private IEnumerator TransitionScene(string scene)
+    {
+        // Fade to black if mask given
+        if (maskImage != null)
+        {
+            for (float t = 0; t < 1; t += Time.deltaTime)
+            {
+                maskImage.color = new Color(0, 0, 0, t);
+                yield return null;
+            }
+        }
+
         SceneManager.LoadScene(scene);
     }
-	#endregion
-	
-	#region Coroutines
-	
 	#endregion
 }

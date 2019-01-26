@@ -14,6 +14,18 @@ public class MeshButton : MonoBehaviour
     private GameObject effect;
 
     /// <summary>
+    /// <para>The audio clip to use on OnMouseEnter</para>
+    /// </summary>
+    [SerializeField]
+    private AudioClip enterClip;
+
+    /// <summary>
+    /// <para>The audio clip to use on OnMouseDown</para>
+    /// </summary>
+    [SerializeField]
+    private AudioClip downClip;
+
+    /// <summary>
     /// <para>The method that is called when the button is clicked</para>
     /// </summary>
     [SerializeField]
@@ -72,6 +84,11 @@ public class MeshButton : MonoBehaviour
     private void OnMouseDown()
     {
         OnClick.Invoke();
+        if (_audioSource != null && downClip != null)
+        {
+            _audioSource.clip = downClip;
+            _audioSource.Play();
+        }
     }
 
     /// <summary>
@@ -83,8 +100,9 @@ public class MeshButton : MonoBehaviour
         {
             effect.SetActive(true);
         }
-        if (_audioSource != null)
+        if (_audioSource != null && enterClip != null)
         {
+            _audioSource.clip = enterClip;
             _audioSource.Play();
         }
     }
