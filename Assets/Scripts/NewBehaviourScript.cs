@@ -2,20 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshRenderer))]
-public class MeshColor : MonoBehaviour 
+public class NewBehaviourScript : MonoBehaviour 
 {
-    #region Variables
-    /// <summary>
-    /// <para>The color of the material</para>
-    /// </summary>
-    [SerializeField]
-    private Color color;
-
-    /// <summary>
-    /// <para>The Mesh Renderer component attached</para>
-    /// </summary>
-    private MeshRenderer _meshRenderer;
+	#region Variables
+	
 	#endregion
 
 	#region Properties
@@ -28,8 +18,7 @@ public class MeshColor : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-        _meshRenderer = GetComponent<MeshRenderer>();
-        _meshRenderer.material.color = color;
+		
 	}
 	
 	/// <summary>
@@ -37,7 +26,7 @@ public class MeshColor : MonoBehaviour
 	/// <summary>
 	private void Start() 
 	{
-
+		
 	}
 	
 	/// <summary>
