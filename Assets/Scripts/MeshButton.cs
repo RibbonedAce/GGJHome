@@ -18,6 +18,11 @@ public class MeshButton : MonoBehaviour
     /// </summary>
     [SerializeField]
     private UnityEvent OnClick;
+
+    /// <summary>
+    /// <para>The Audio Source component attached</para>
+    /// </summary>
+    private AudioSource _audioSource;
 	#endregion
 
 	#region Properties
@@ -30,6 +35,7 @@ public class MeshButton : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
+        _audioSource = GetComponent<AudioSource>();
 		if (effect != null)
         {
             effect.SetActive(false);
@@ -76,6 +82,10 @@ public class MeshButton : MonoBehaviour
         if (effect != null)
         {
             effect.SetActive(true);
+        }
+        if (_audioSource != null)
+        {
+            _audioSource.Play();
         }
     }
 
