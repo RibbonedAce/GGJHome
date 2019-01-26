@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Player : MonoBehaviour
 {
@@ -10,12 +11,19 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject m_feet;
     private float m_jumpForce = 10f;
+    [SerializeField] private MouseLook m_MouseLook;
     // Start is called before the first frame update
     void Start()
     {
         m_rigidBody = this.GetComponent<Rigidbody>();
+        m_MouseLook.Init(transform, Camera.main.transform);
     }
 
+
+    private void Update()
+    {
+        m_MouseLook.LookRotation(transform, Camera.main.transform);
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -25,6 +33,7 @@ public class Player : MonoBehaviour
             Debug.Log("Space was hit");
             Jump();
         }
+        m_MouseLook.UpdateCursorLock();
     }
 
     void Move()

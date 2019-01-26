@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
-    //[SerializeField] public AmmoType m_ammo;
     public GameObject projectile;
     //public float speed = 20;
 
@@ -27,9 +26,9 @@ public class GunScript : MonoBehaviour
     void Shoot()
     {
         //Shoot in the forward direction of this object
-        Vector3 fwdDirection = this.transform.forward;
+        //Vector3 fwdDirection = this.transform.forward;
 
-        Instantiate(projectile, this.transform.position, Quaternion.Euler(fwdDirection));
+        Instantiate(projectile, this.transform.position, transform.rotation);
 
     }
 
