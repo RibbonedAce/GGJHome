@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 77099583}
   - component: {fileID: 77099584}
   - component: {fileID: 77099585}
+  - component: {fileID: 77099586}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -168,6 +169,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 807a89d7ebfa1e243a35992de489ae0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &77099586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77099582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ea3e8f98af63441bc7b97a8e2a6342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &78623125
@@ -2257,8 +2270,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 77099585}
-        m_MethodName: SetSound
+      - m_Target: {fileID: 77099586}
+        m_MethodName: SetSensitivity
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
