@@ -129,6 +129,17 @@ public class Menu : MonoBehaviour
         Transform camTransform = Camera.main.transform;
         Vector3 oldPos = camTransform.position;
         Quaternion oldRot = camTransform.rotation;
+        for (int i = 0; i < clickObjects.Length; ++i)
+        {
+            foreach (Transform t in clickObjects[i])
+            {
+                Collider c = t.GetComponent<Collider>();
+                if (c != null)
+                {
+                    c.enabled = false;
+                }
+            }
+        }
 
         // Do progressive movement
         for (float t = 0f; t < 1f / cameraSpeed; t += Time.deltaTime)
@@ -139,15 +150,12 @@ public class Menu : MonoBehaviour
         }
 
         // Finish
-        for (int i = 0; i < clickObjects.Length; ++i)
+        foreach (Transform t in clickObjects[menuIndex])
         {
-            foreach (Transform t in clickObjects[i])
+            Collider c = t.GetComponent<Collider>();
+            if (c != null)
             {
-                Collider c = t.GetComponent<Collider>();
-                if (c != null)
-                {
-                    c.enabled = i == menuIndex;
-                }
+                c.enabled = true;
             }
         }
         camTransform.position = newPos;
