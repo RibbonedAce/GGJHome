@@ -8,6 +8,12 @@ public class MeshButton : MonoBehaviour
 {
     #region Variables
     /// <summary>
+    /// <para>The object that is enabled/disabled depending on highlight</para>
+    /// </summary>
+    [SerializeField]
+    private GameObject effect;
+
+    /// <summary>
     /// <para>The method that is called when the button is clicked</para>
     /// </summary>
     [SerializeField]
@@ -24,7 +30,10 @@ public class MeshButton : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-		
+		if (effect != null)
+        {
+            effect.SetActive(false);
+        }
 	}
 	
 	/// <summary>
@@ -57,6 +66,28 @@ public class MeshButton : MonoBehaviour
     private void OnMouseDown()
     {
         OnClick.Invoke();
+    }
+
+    /// <summary>
+    /// This is called when the mouse has entered the GUIElement or Collider
+    /// </summary>
+    private void OnMouseEnter()
+    {
+        if (effect != null)
+        {
+            effect.SetActive(true);
+        }
+    }
+
+    /// <summary>
+    /// This is called when the mouse is no longer over the GUIElement or Collider
+    /// </summary>
+    private void OnMouseExit()
+    {
+        if (effect != null)
+        {
+            effect.SetActive(false);
+        }
     }
     #endregion
 
