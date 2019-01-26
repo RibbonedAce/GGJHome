@@ -1973,7 +1973,7 @@ MonoBehaviour:
   - {fileID: 991675931}
   - {fileID: 1289551341}
   - {fileID: 1376612361}
-  - {fileID: 0}
+  - {fileID: 1007511402}
   cameraSpeed: 1
 --- !u!4 &2091273679
 Transform:
