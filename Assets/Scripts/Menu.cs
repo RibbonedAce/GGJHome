@@ -18,6 +18,12 @@ public class Menu : MonoBehaviour
     private Vector3[] cameraAngles;
 
     /// <summary>
+    /// <para>The objects to click on for transitions</para>
+    /// </summary>
+    [SerializeField]
+    private Transform[] clickObjects;
+
+    /// <summary>
     /// <para>The speed at which the camera moves when transitioning between menus</para>
     /// </summary>
     [SerializeField]
@@ -49,10 +55,23 @@ public class Menu : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-        // Set camera to first menu
+        // Set camera and object click to first menu
         menuIndex = 0;
         Camera.main.transform.position = cameraPositions[menuIndex];
         Camera.main.transform.rotation = Quaternion.Euler(cameraAngles[menuIndex]);
+
+        // Set first set of clickable objects
+        for (int i = 0; i < clickObjects.Length; ++i)
+        {
+            foreach (Transform t in clickObjects[i])
+            {
+                Collider c = t.GetComponent<Collider>();
+                if (c != null)
+                {
+                    c.enabled = i == menuIndex;
+                }
+            }
+        }
 	}
 	
 	/// <summary>
@@ -93,7 +112,6 @@ public class Menu : MonoBehaviour
             menuIndex = menu;
             transitionRoutine = StartCoroutine(MoveCamera(cameraPositions[menuIndex], Quaternion.Euler(cameraAngles[menuIndex])));
         }
-        
     }
 	#endregion
 	
@@ -121,6 +139,17 @@ public class Menu : MonoBehaviour
         }
 
         // Finish
+        for (int i = 0; i < clickObjects.Length; ++i)
+        {
+            foreach (Transform t in clickObjects[i])
+            {
+                Collider c = t.GetComponent<Collider>();
+                if (c != null)
+                {
+                    c.enabled = i == menuIndex;
+                }
+            }
+        }
         camTransform.position = newPos;
         camTransform.rotation = newRot;
         transitioning = false;
