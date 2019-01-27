@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: 5caf71c09a781924e8cb5901f70d16a0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Book
+    100002: Book1
+    100004: Book1 1
+    100006: Book1 2
+    100008: Book2
+    100010: Book2 1
+    100012: Book2 2
+    100014: Book3
+    100016: Book3 1
+    100018: Book3 2
+    100020: Book4
+    100022: Book4 1
+    100024: Book4 2
+    100026: Book5
+    100028: Book5 1
+    100030: Book5 2
+    100032: Boombox
+    100034: Canvas
+    100036: Canvas 1
+    100038: Canvas 2
+    100040: Canvas 3
+    100042: Canvas 4
+    100044: Chair
+    100046: curtain_rod
+    100048: Curtains
+    100050: Dining_Table
+    100052: Easel
+    100054: Floor
+    100056: Glass
+    100058: Handle
+    100060: Left_Button
+    100062: //RootNode
+    100064: pCube14
+    100066: pCube15
+    100068: pCube16
+    100070: pCube17
+    100072: pCube18
+    100074: pCylinder2
+    100076: pCylinder3
+    100078: picture
+    100080: picture1
+    100082: picture2
+    100084: picture3
+    100086: picture4
+    100088: polySurface1
+    100090: polySurface11
+    100092: polySurface13
+    100094: polySurface2
+    100096: polySurface5
+    100098: polySurface6
+    100100: polySurface8
+    100102: polySurface9
+    100104: Poster
+    100106: Right_button
+    100108: Shelf
+    100110: Shelf1
+    100112: Shelf2
+    100114: Wall
+    100116: Wall1
+    100118: Wall2
+    100120: Window
+    400000: Book
+    400002: Book1
+    400004: Book1 1
+    400006: Book1 2
+    400008: Book2
+    400010: Book2 1
+    400012: Book2 2
+    400014: Book3
+    400016: Book3 1
+    400018: Book3 2
+    400020: Book4
+    400022: Book4 1
+    400024: Book4 2
+    400026: Book5
+    400028: Book5 1
+    400030: Book5 2
+    400032: Boombox
+    400034: Canvas
+    400036: Canvas 1
+    400038: Canvas 2
+    400040: Canvas 3
+    400042: Canvas 4
+    400044: Chair
+    400046: curtain_rod
+    400048: Curtains
+    400050: Dining_Table
+    400052: Easel
+    400054: Floor
+    400056: Glass
+    400058: Handle
+    400060: Left_Button
+    400062: //RootNode
+    400064: pCube14
+    400066: pCube15
+    400068: pCube16
+    400070: pCube17
+    400072: pCube18
+    400074: pCylinder2
+    400076: pCylinder3
+    400078: picture
+    400080: picture1
+    400082: picture2
+    400084: picture3
+    400086: picture4
+    400088: polySurface1
+    400090: polySurface11
+    400092: polySurface13
+    400094: polySurface2
+    400096: polySurface5
+    400098: polySurface6
+    400100: polySurface8
+    400102: polySurface9
+    400104: Poster
+    400106: Right_button
+    400108: Shelf
+    400110: Shelf1
+    400112: Shelf2
+    400114: Wall
+    400116: Wall1
+    400118: Wall2
+    400120: Window
+    2100000: lambert1
+    2100002: lambert4
+    2100004: lambert15
+    2100006: lambert3
+    2100008: lambert5
+    2100010: lambert16
+    2100012: lambert17
+    2100014: lambert19
+    2300000: Book
+    2300002: Book1
+    2300004: Book1 1
+    2300006: Book1 2
+    2300008: Book2
+    2300010: Book2 1
+    2300012: Book2 2
+    2300014: Book3
+    2300016: Book3 1
+    2300018: Book3 2
+    2300020: Book4
+    2300022: Book4 1
+    2300024: Book4 2
+    2300026: Book5
+    2300028: Book5 1
+    2300030: Book5 2
+    2300032: Boombox
+    2300034: Canvas
+    2300036: Canvas 1
+    2300038: Canvas 2
+    2300040: Canvas 3
+    2300042: Canvas 4
+    2300044: Chair
+    2300046: curtain_rod
+    2300048: Curtains
+    2300050: Dining_Table
+    2300052: Easel
+    2300054: Floor
+    2300056: Glass
+    2300058: Handle
+    2300060: Left_Button
+    2300062: pCube14
+    2300064: pCube15
+    2300066: pCube16
+    2300068: pCube17
+    2300070: pCube18
+    2300072: pCylinder2
+    2300074: pCylinder3
+    2300076: picture
+    2300078: picture1
+    2300080: picture2
+    2300082: picture3
+    2300084: picture4
+    2300086: polySurface1
+    2300088: polySurface11
+    2300090: polySurface13
+    2300092: polySurface2
+    2300094: polySurface5
+    2300096: polySurface6
+    2300098: polySurface8
+    2300100: polySurface9
+    2300102: Poster
+    2300104: Right_button
+    2300106: Shelf
+    2300108: Shelf1
+    2300110: Shelf2
+    2300112: Wall
+    2300114: Wall1
+    2300116: Wall2
+    2300118: Window
+    3300000: Book
+    3300002: Book1
+    3300004: Book1 1
+    3300006: Book1 2
+    3300008: Book2
+    3300010: Book2 1
+    3300012: Book2 2
+    3300014: Book3
+    3300016: Book3 1
+    3300018: Book3 2
+    3300020: Book4
+    3300022: Book4 1
+    3300024: Book4 2
+    3300026: Book5
+    3300028: Book5 1
+    3300030: Book5 2
+    3300032: Boombox
+    3300034: Canvas
+    3300036: Canvas 1
+    3300038: Canvas 2
+    3300040: Canvas 3
+    3300042: Canvas 4
+    3300044: Chair
+    3300046: curtain_rod
+    3300048: Curtains
+    3300050: Dining_Table
+    3300052: Easel
+    3300054: Floor
+    3300056: Glass
+    3300058: Handle
+    3300060: Left_Button
+    3300062: pCube14
+    3300064: pCube15
+    3300066: pCube16
+    3300068: pCube17
+    3300070: pCube18
+    3300072: pCylinder2
+    3300074: pCylinder3
+    3300076: picture
+    3300078: picture1
+    3300080: picture2
+    3300082: picture3
+    3300084: picture4
+    3300086: polySurface1
+    3300088: polySurface11
+    3300090: polySurface13
+    3300092: polySurface2
+    3300094: polySurface5
+    3300096: polySurface6
+    3300098: polySurface8
+    3300100: polySurface9
+    3300102: Poster
+    3300104: Right_button
+    3300106: Shelf
+    3300108: Shelf1
+    3300110: Shelf2
+    3300112: Wall
+    3300114: Wall1
+    3300116: Wall2
+    3300118: Window
+    4300000: Floor
+    4300002: Wall2
+    4300004: Wall1
+    4300006: Wall
+    4300008: Window
+    4300010: Glass
+    4300012: curtain_rod
+    4300014: pCylinder3
+    4300016: pCylinder2
+    4300018: Curtains
+    4300020: pCube14
+    4300022: pCube15
+    4300024: pCube16
+    4300026: pCube17
+    4300028: pCube18
+    4300030: Dining_Table
+    4300032: Chair
+    4300034: Boombox
+    4300036: polySurface13
+    4300038: polySurface11
+    4300040: polySurface8
+    4300042: polySurface9
+    4300044: polySurface5
+    4300046: polySurface6
+    4300048: Right_button
+    4300050: Left_Button
+    4300052: Handle
+    4300054: Poster
+    4300056: Shelf
+    4300058: Book1
+    4300060: Book2
+    4300062: Book3
+    4300064: Book4
+    4300066: Book5
+    4300068: Shelf1
+    4300070: Book1
+    4300072: Book2
+    4300074: Book3
+    4300076: Book4
+    4300078: Book5
+    4300080: Shelf2
+    4300082: Book1
+    4300084: Book2
+    4300086: Book3
+    4300088: Book4
+    4300090: Book5
+    4300092: Book
+    4300094: polySurface1
+    4300096: picture
+    4300098: Canvas
+    4300100: picture1
+    4300102: Canvas
+    4300104: picture2
+    4300106: Canvas
+    4300108: picture3
+    4300110: Canvas
+    4300112: picture4
+    4300114: Canvas
+    4300116: Easel
+    4300118: polySurface2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
