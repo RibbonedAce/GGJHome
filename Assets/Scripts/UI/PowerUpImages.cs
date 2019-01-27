@@ -1,11 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PowerUpImages : MonoBehaviour 
 {
-	#region Variables
-	
+    #region Variables
+    /// <summary>
+    /// <para>The Powerup List to get info from</para>
+    /// </summary>
+    [SerializeField]
+    private PowerupList list;
+
+    /// <summary>
+    /// <para>The images to place the powerup icons in</para>
+    /// </summary>
+    [SerializeField]
+    private Image[] images;
 	#endregion
 
 	#region Properties
@@ -34,7 +45,13 @@ public class PowerUpImages : MonoBehaviour
 	/// <summary>
 	private void Update() 
 	{
-		
+		for (int i = 0; i < 3; ++i)
+        {
+            if (list.pList[i] != null)
+            {
+                images[i].sprite = list.pList[i].icon.sprite;
+            }
+        }
 	}
 	
 	/// <summary>

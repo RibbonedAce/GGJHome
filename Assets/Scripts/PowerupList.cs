@@ -5,7 +5,7 @@ using UnityEngine;
 public class PowerupList : MonoBehaviour
 {
 
-    List<PowerupsBaseClass> pList = new List<PowerupsBaseClass>();
+    public List<PowerupsBaseClass> pList = new List<PowerupsBaseClass>();
     private int maxPowerups;
     // Start is called before the first frame update
     void Start()
