@@ -20,5 +20,6 @@ public class PowerupsBaseClass : MonoBehaviour
 
     public virtual void Activate(Vector3 position)
     {
+
     }
 }

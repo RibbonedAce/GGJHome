@@ -32,7 +32,15 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _navMeshAgent.SetDestination(target.position);
+        // Applying invisible powerup
+        if (GameController.Instance == null || !GameController.Instance.Invisible)
+        {
+            _navMeshAgent.SetDestination(target.position);
+        }
+        else
+        {
+            _navMeshAgent.SetDestination(transform.position);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

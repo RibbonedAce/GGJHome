@@ -7,10 +7,13 @@ public class PowerupList : MonoBehaviour
 
     public List<PowerupsBaseClass> pList = new List<PowerupsBaseClass>();
     public int maxPowerups = 3;
+    public AudioClip powerUpClip;
+    private AudioSource _audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,5 +53,7 @@ public class PowerupList : MonoBehaviour
     {
         pList[pList.Count - 1].Activate(position);
         pList.RemoveAt(pList.Count - 1);
+        _audioSource.clip = powerUpClip;
+        _audioSource.Play();
     }
 }

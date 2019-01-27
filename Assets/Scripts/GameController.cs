@@ -35,6 +35,11 @@ public class GameController : MonoBehaviour
     /// <para>Whether the game is paused</para>
     /// </summary>
     public bool Paused { get; private set; }
+
+    /// <summary>
+    /// <para>Whether the player is "invisible"</para>
+    /// </summary>
+    public bool Invisible { get; set; }
     #endregion
 
     #region Events
