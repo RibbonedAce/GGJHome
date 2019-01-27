@@ -24,6 +24,10 @@ ModelImporter:
     4300002: Blender_glass
     4300004: Blender_lid
     4300006: Button
+    6400000: //RootNode
+    6400002: Blender_glass
+    6400004: Blender_lid
+    6400006: Button
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -57,7 +61,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -75,7 +79,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
