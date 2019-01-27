@@ -18,29 +18,43 @@ public class GameController : MonoBehaviour
     /// </summary>
     [SerializeField]
     private GameObject pauseMenu;
+	#endregion
+
+	#region Properties
+    /// <summary>
+    /// <para>The instance to reference</para>
+    /// </summary>
+	public static GameController Instance { get; private set; }
 
     /// <summary>
     /// <para>Whether the game is paused</para>
     /// </summary>
-    private bool paused;
-	#endregion
+    public bool Paused { get; private set; }
+    #endregion
 
-	#region Properties
-	
-	#endregion
-	
-	#region Events
-	/// <summary>
-	/// Awake is called before start
-	/// <summary>
-	private void Awake() 
+    #region Events
+    /// <summary>
+    /// Awake is called before start
+    /// <summary>
+    private void Awake() 
 	{
+        // Set instancing
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+
+        // Initialization
 		if (maskImage != null)
         {
             maskImage.color = Color.clear;
         }
-        paused = false;
-        pauseMenu.SetActive(false);
+        Paused = true;
+        TogglePause();
 	}
 	
 	/// <summary>
@@ -87,9 +101,10 @@ public class GameController : MonoBehaviour
     /// </summary>
     private void TogglePause()
     {
-        paused = !paused;
-        Time.timeScale = paused ? 0 : 1;
-        pauseMenu.SetActive(paused);
+        Paused = !Paused;
+        Time.timeScale = Paused ? 0 : 1;
+        pauseMenu.SetActive(Paused);
+        Cursor.lockState = Paused ? CursorLockMode.None : CursorLockMode.Locked;
     }
 	#endregion
 	

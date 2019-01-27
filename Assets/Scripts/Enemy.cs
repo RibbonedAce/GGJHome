@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     {
         if(m_health <= 0)
         {
+            Instantiate(postDeathEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
@@ -40,10 +41,5 @@ public class Enemy : MonoBehaviour
         {
             m_health -= 5;
         }
-    }
-
-    private void OnDestroy()
-    {
-        Instantiate(postDeathEffect, transform.position, transform.rotation);
     }
 }

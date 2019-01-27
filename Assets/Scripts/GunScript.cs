@@ -9,6 +9,9 @@ public class GunScript : MonoBehaviour
     public int m_clipSize;
     public int m_maxClipSize = 5;
     bool m_reloading = false;
+
+    public AudioClip shootClip;
+    public AudioClip reloadClip;
     private AudioSource _audioSource;
 
     void Start()
@@ -20,6 +23,10 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameController.Instance.Paused)
+        {
+            return;
+        }
         if (m_clipSize == 0 && !m_reloading)
         {
             Debug.Log("Reloading...");
@@ -38,6 +45,8 @@ public class GunScript : MonoBehaviour
 
     IEnumerator reloadC()
     {
+        _audioSource.clip = reloadClip;
+        _audioSource.Play();
         yield return new WaitForSeconds(2);
         Reload();
         m_reloading = false;
@@ -47,6 +56,7 @@ public class GunScript : MonoBehaviour
     {
         //Shoot in the forward direction of this object
         Instantiate(projectile, this.transform.position, transform.rotation);
+        _audioSource.clip = shootClip;
         _audioSource.Play();
     }
 
