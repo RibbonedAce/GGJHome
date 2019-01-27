@@ -27,6 +27,9 @@ ModelImporter:
     4300000: polySurface3
     4300002: polySurface4
     4300004: polySurface2
+    6400000: polySurface2
+    6400002: polySurface3
+    6400004: polySurface4
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -60,7 +63,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -78,7 +81,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
