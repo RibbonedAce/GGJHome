@@ -49,6 +49,7 @@ public class WaveSpawner : MonoBehaviour
 
     void newWave()
     {
+        Debug.Log(transform.childCount - currentWave);
         //Check to see if we are on the last Wave
         if(currentWave != transform.childCount)
         {

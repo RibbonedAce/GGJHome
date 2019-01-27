@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_maxHealth: 100
-  hurtClip: {fileID: 0}
+  hurtClip: {fileID: 8300000, guid: 4463b27982b7e4fd2a16364062052354, type: 3}
 --- !u!114 &7821374250361988583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +677,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.76
       objectReference: {fileID: 0}
-    - target: {fileID: 2848221829873774537, guid: 69ba27bc9687a0d45a60fac8283c2dac,
+    - target: {fileID: 7605347181050331445, guid: 69ba27bc9687a0d45a60fac8283c2dac,
         type: 3}
       propertyPath: m_Layer
       value: 10
@@ -687,12 +687,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 7605347181050331445, guid: 69ba27bc9687a0d45a60fac8283c2dac,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1338401418098440987, guid: 69ba27bc9687a0d45a60fac8283c2dac,
+    - target: {fileID: 2848221829873774537, guid: 69ba27bc9687a0d45a60fac8283c2dac,
         type: 3}
       propertyPath: m_Layer
       value: 10
@@ -703,6 +698,11 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8844770233975921363, guid: 69ba27bc9687a0d45a60fac8283c2dac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338401418098440987, guid: 69ba27bc9687a0d45a60fac8283c2dac,
         type: 3}
       propertyPath: m_Layer
       value: 10

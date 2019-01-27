@@ -112,7 +112,6 @@ public class GameController : MonoBehaviour
         if (WaveSpawner.instance != null && WaveSpawner.instance.finished && !movingOn)
         {
             movingOn = true;
-            RemoveUI();
             Invoke("GoToNextLevel", 5);
         }
 
@@ -163,7 +162,7 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void GoToNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % 5);
     }
 
     /// <summary>

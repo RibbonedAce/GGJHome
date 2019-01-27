@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_maxHealth: 100
-  hurtClip: {fileID: 8300000, guid: 3783a47c6752b4fb689fe05023cf9853, type: 3}
+  hurtClip: {fileID: 8300000, guid: 4463b27982b7e4fd2a16364062052354, type: 3}
 --- !u!114 &7186632616082552258
 MonoBehaviour:
   m_ObjectHideFlags: 0
