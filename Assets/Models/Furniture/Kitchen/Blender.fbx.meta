@@ -1,15 +1,29 @@
 fileFormatVersion: 2
-guid: e06c705e437190a40abd1b813c9aaed4
+guid: 5e1e930d7071b0e46ac9c9c0a0c482b5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Blender_glass
+    100004: Blender_lid
+    100006: Button
     400000: //RootNode
+    400002: Blender_glass
+    400004: Blender_lid
+    400006: Button
     2100000: lambert1
     2300000: //RootNode
+    2300002: Blender_glass
+    2300004: Blender_lid
+    2300006: Button
     3300000: //RootNode
-    4300000: Coffee_Table
-    6400000: //RootNode
+    3300002: Blender_glass
+    3300004: Blender_lid
+    3300006: Button
+    4300000: Blender
+    4300002: Blender_glass
+    4300004: Blender_lid
+    4300006: Button
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +57,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -61,7 +75,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

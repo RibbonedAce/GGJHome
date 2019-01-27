@@ -1,15 +1,45 @@
 fileFormatVersion: 2
-guid: e06c705e437190a40abd1b813c9aaed4
+guid: 016ed33fc1f73fd4d806aca67b73ff68
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Door
+    100002: Glass
+    100004: Handle4
+    100006: Keypad
+    100008: //RootNode
+    100010: Time
+    100012: w1
+    400000: Door
+    400002: Glass
+    400004: Handle4
+    400006: Keypad
+    400008: //RootNode
+    400010: Time
+    400012: w1
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Coffee_Table
-    6400000: //RootNode
+    2100002: lambert2
+    2300000: Door
+    2300002: Glass
+    2300004: Handle4
+    2300006: Keypad
+    2300008: //RootNode
+    2300010: Time
+    2300012: w1
+    3300000: Door
+    3300002: Glass
+    3300004: Handle4
+    3300006: Keypad
+    3300008: //RootNode
+    3300010: Time
+    3300012: w1
+    4300000: Microwave
+    4300002: Glass
+    4300004: Door
+    4300006: Handle4
+    4300008: w1
+    4300010: Time
+    4300012: Keypad
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +73,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -61,7 +91,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

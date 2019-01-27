@@ -1,15 +1,30 @@
 fileFormatVersion: 2
-guid: e06c705e437190a40abd1b813c9aaed4
+guid: b97fee825a8a6f34283924b5240e1450
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Handle2
+    100002: //RootNode
+    100004: mirror
+    100006: w1
+    400000: Handle2
+    400002: //RootNode
+    400004: mirror
+    400006: w1
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Coffee_Table
-    6400000: //RootNode
+    2100002: lambert3
+    2300000: Handle2
+    2300002: //RootNode
+    2300004: mirror
+    2300006: w1
+    3300000: Handle2
+    3300002: //RootNode
+    3300004: mirror
+    3300006: w1
+    4300000: medicine_cabinet
+    4300002: Handle2
+    4300004: w1
+    4300006: mirror
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -43,7 +58,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -61,7 +76,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
