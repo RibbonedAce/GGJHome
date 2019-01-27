@@ -23,7 +23,7 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameController.Instance.Paused)
+        if (GameController.Instance != null && GameController.Instance.Paused)
         {
             return;
         }

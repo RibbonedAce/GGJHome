@@ -36,5 +36,11 @@ public class PlayerHealth : MonoBehaviour
             _audioSource.clip = hurtClip;
             _audioSource.Play();
         }
+        if (collision.collider.CompareTag("Lava"))
+        {
+            m_playerHealth -= collision.collider.GetComponent<FloorIsLava>().damageDealt;
+            Debug.Log("Current Health" + m_playerHealth);
+            _audioSource.Play();
+        }
     }
 }

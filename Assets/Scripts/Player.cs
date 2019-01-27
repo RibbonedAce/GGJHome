@@ -23,6 +23,10 @@ public class Player : MonoBehaviour
     private void Update()
     {
         m_MouseLook.LookRotation(transform, Camera.main.transform);
+        if (Input.GetButtonDown("Mouse2"))
+        {
+        
+        }
     }
     // Update is called once per frame
     void FixedUpdate()

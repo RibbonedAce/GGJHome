@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(m_health <= 0)
+        if (m_health <= 0)
         {
             Instantiate(postDeathEffect, transform.position, transform.rotation);
             Destroy(gameObject);
@@ -37,9 +37,24 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Bullets"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Bullets"))
         {
             m_health -= 5;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(postDeathEffect, transform.position, transform.rotation);
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.collider.CompareTag("Lava"))
+        {
+            m_health -= collision.collider.GetComponent<FloorIsLava>().damageDealt;
+            Debug.Log("Current Health" + m_health);
+            //_audioSource.Play();
         }
     }
 }
