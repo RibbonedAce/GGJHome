@@ -71,6 +71,7 @@ public class SoundController : MonoBehaviour
 	public void SetSound(float level)
     {
         PlayerPrefs.SetFloat("Sound", level);
+        Debug.Log(level);
         SoundLevel = level;
 
         // Set each audio level

@@ -7,6 +7,9 @@ public class Enemy : MonoBehaviour
     public float m_health;
     [SerializeField]
     public float m_damage;
+
+    public GameObject postDeathEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +30,10 @@ public class Enemy : MonoBehaviour
         {
             m_health -= 5;
         }
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(postDeathEffect, transform.position, transform.rotation);
     }
 }

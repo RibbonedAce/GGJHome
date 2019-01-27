@@ -9,10 +9,12 @@ public class GunScript : MonoBehaviour
     public int m_clipSize;
     public int m_maxClipSize = 5;
     bool m_reloading = false;
+    private AudioSource _audioSource;
 
     void Start()
     {
         m_clipSize = m_maxClipSize;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class GunScript : MonoBehaviour
     {
         //Shoot in the forward direction of this object
         Instantiate(projectile, this.transform.position, transform.rotation);
+        _audioSource.Play();
     }
 
     void DecreaseClip()

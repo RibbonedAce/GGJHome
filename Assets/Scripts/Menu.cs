@@ -56,7 +56,7 @@ public class Menu : MonoBehaviour
 	private void Awake() 
 	{
         // Set camera and object click to first menu
-        menuIndex = 0;
+        menuIndex = 1;
         Camera.main.transform.position = cameraPositions[menuIndex];
         Camera.main.transform.rotation = Quaternion.Euler(cameraAngles[menuIndex]);
 
@@ -110,12 +110,22 @@ public class Menu : MonoBehaviour
         if (menu != menuIndex && !transitioning)
         {
             menuIndex = menu;
-            transitionRoutine = StartCoroutine(MoveCamera(cameraPositions[menuIndex], Quaternion.Euler(cameraAngles[menuIndex])));
+            transitionRoutine = StartCoroutine(TransitionMenu());
         }
     }
 	#endregion
 	
 	#region Coroutines
+    /// <summary>
+    /// Transition between submenus
+    /// </summary>
+    /// <returns>The time it takes to transition twice</returns>
+    private IEnumerator TransitionMenu()
+    {
+        yield return StartCoroutine(MoveCamera(cameraPositions[0], Quaternion.Euler(cameraAngles[0])));
+        yield return StartCoroutine(MoveCamera(cameraPositions[menuIndex], Quaternion.Euler(cameraAngles[menuIndex])));
+    }
+
     /// <summary>
     /// Move the camera to a new position over time
     /// </summary>
