@@ -1,2 +1,0 @@
-<b><color=red>*</color>JumpUpFirstNode</b>
-<b><color=blue>*</color>JumpUpSecondNode</b>

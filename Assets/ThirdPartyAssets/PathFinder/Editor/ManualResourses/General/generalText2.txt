@@ -1,1 +1,0 @@
-You can edit it by using Unity Inspector, all options have some tooltips.

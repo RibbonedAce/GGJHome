@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,10 +11,14 @@ public class Enemy : MonoBehaviour
 
     public GameObject postDeathEffect;
 
+    public Transform target;
+
+    private NavMeshAgent _navMeshAgent;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _navMeshAgent = GetComponent<NavMeshAgent>();
     }
     // Update is called once per frame
     void Update()
@@ -22,6 +27,11 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        _navMeshAgent.SetDestination(target.position);
     }
 
     private void OnCollisionEnter(Collision collision)
