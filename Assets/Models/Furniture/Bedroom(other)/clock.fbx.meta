@@ -35,6 +35,12 @@ ModelImporter:
     4300006: pCube2
     4300008: Legs1
     4300010: Legs
+    6400000: //RootNode
+    6400002: Clock_knob
+    6400004: Legs
+    6400006: Legs1
+    6400008: pCube1
+    6400010: pCube2
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -68,7 +74,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -86,7 +92,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
