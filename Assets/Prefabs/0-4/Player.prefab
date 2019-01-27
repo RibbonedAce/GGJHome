@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 5223420887315064946}
   - component: {fileID: 861064329}
   - component: {fileID: 7186632616082552258}
+  - component: {fileID: 5569190013980913477}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -292,7 +293,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.8
+  m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -574,6 +575,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad52989afb2d0af4998dc3177b915cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5569190013980913477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875334974637817711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15f52ce2b8dd484a98d7d1780bfeda5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pList: []
+  maxPowerups: 3
+  powerUpClip: {fileID: 8300000, guid: 3f3c2f7b7c23f4462a207cfcc8f9238f, type: 3}
 --- !u!1001 &2032989485863860099
 PrefabInstance:
   m_ObjectHideFlags: 0

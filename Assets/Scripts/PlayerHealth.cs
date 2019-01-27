@@ -32,14 +32,12 @@ public class PlayerHealth : MonoBehaviour
         if (collision.collider.CompareTag("Enemy"))
         {
             m_playerHealth -= collision.collider.GetComponent<Enemy>().m_damage;
-            Debug.Log("Current Health" + m_playerHealth);
             _audioSource.clip = hurtClip;
             _audioSource.Play();
         }
         if (collision.collider.CompareTag("Lava"))
         {
             m_playerHealth -= collision.collider.GetComponent<FloorIsLava>().damageDealt;
-            Debug.Log("Current Health" + m_playerHealth);
             _audioSource.Play();
         }
     }

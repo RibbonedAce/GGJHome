@@ -20,6 +20,24 @@ public class GameController : MonoBehaviour
     private GameObject pauseMenu;
 
     /// <summary>
+    /// <para>The player used to determine loss state</para>
+    /// </summary>
+    [SerializeField]
+    private GameObject player;
+
+    /// <summary>
+    /// <para>The objects to show on game over</para>
+    /// </summary>
+    [SerializeField]
+    private GameObject gameOverObject;
+
+    /// <summary>
+    /// <para>The canvas that has all of the UI elements</para>
+    /// </summary>
+    [SerializeField]
+    private Canvas canvas;
+
+    /// <summary>
     /// <para>Whether the goal to move on has been met</para>
     /// </summary>
     private bool movingOn;
@@ -70,6 +88,7 @@ public class GameController : MonoBehaviour
         }
         Paused = true;
         TogglePause();
+        gameOverObject.SetActive(false);
 	}
 	
 	/// <summary>
@@ -93,7 +112,16 @@ public class GameController : MonoBehaviour
         if (WaveSpawner.instance != null && WaveSpawner.instance.finished && !movingOn)
         {
             movingOn = true;
+            RemoveUI();
             Invoke("GoToNextLevel", 5);
+        }
+
+        if (player == null && !movingOn)
+        {
+            movingOn = true;
+            RemoveUI();
+            gameOverObject.SetActive(true);
+            Invoke("QuitToMenu", 5);
         }
 	}
 	
@@ -136,6 +164,17 @@ public class GameController : MonoBehaviour
     public void GoToNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    /// <summary>
+    /// Remove all UI from the screen
+    /// </summary>
+    private void RemoveUI()
+    {
+        foreach (Transform t in canvas.transform)
+        {
+            t.gameObject.SetActive(false);
+        }
     }
 
     /// <summary>
