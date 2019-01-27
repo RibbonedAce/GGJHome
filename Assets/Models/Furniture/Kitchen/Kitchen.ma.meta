@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 778107efc22fb8f4baaeae6b950e10f1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base
+    100002: Blender
+    100004: Blender_glass
+    100006: Blender_lid
+    100008: Button
+    100010: Clock
+    100012: Clock_knob
+    100014: ctrl
+    100016: ctrl1
+    100018: Door
+    100020: Fridge
+    100022: Glass
+    100024: glass
+    100026: Handle
+    100028: Handle1
+    100030: Handle2
+    100032: Handle3
+    100034: Handle4
+    100036: Handle5
+    100038: Keypad
+    100040: //RootNode
+    100042: Knob
+    100044: Knob1
+    100046: Knob2
+    100048: Knob3
+    100050: Knob4
+    100052: Microwave
+    100054: oven
+    100056: pCube1
+    100058: pCube2
+    100060: Seat
+    100062: Sink
+    100064: Sink 1
+    100066: Stool
+    100068: Time
+    100070: w1
+    100072: w1 1
+    100074: w1 2
+    100076: w1 3
+    100078: w1 4
+    100080: w1 5
+    400000: Base
+    400002: Blender
+    400004: Blender_glass
+    400006: Blender_lid
+    400008: Button
+    400010: Clock
+    400012: Clock_knob
+    400014: ctrl
+    400016: ctrl1
+    400018: Door
+    400020: Fridge
+    400022: Glass
+    400024: glass
+    400026: Handle
+    400028: Handle1
+    400030: Handle2
+    400032: Handle3
+    400034: Handle4
+    400036: Handle5
+    400038: Keypad
+    400040: //RootNode
+    400042: Knob
+    400044: Knob1
+    400046: Knob2
+    400048: Knob3
+    400050: Knob4
+    400052: Microwave
+    400054: oven
+    400056: pCube1
+    400058: pCube2
+    400060: Seat
+    400062: Sink
+    400064: Sink 1
+    400066: Stool
+    400068: Time
+    400070: w1
+    400072: w1 1
+    400074: w1 2
+    400076: w1 3
+    400078: w1 4
+    400080: w1 5
+    2100000: lambert2
+    2100002: lambert1
+    2300000: Base
+    2300002: Blender
+    2300004: Blender_glass
+    2300006: Blender_lid
+    2300008: Button
+    2300010: Clock
+    2300012: Clock_knob
+    2300014: ctrl
+    2300016: ctrl1
+    2300018: Door
+    2300020: Fridge
+    2300022: Glass
+    2300024: glass
+    2300026: Handle
+    2300028: Handle1
+    2300030: Handle2
+    2300032: Handle3
+    2300034: Handle4
+    2300036: Handle5
+    2300038: Keypad
+    2300040: Knob
+    2300042: Knob1
+    2300044: Knob2
+    2300046: Knob3
+    2300048: Knob4
+    2300050: Microwave
+    2300052: oven
+    2300054: pCube1
+    2300056: pCube2
+    2300058: Seat
+    2300060: Sink
+    2300062: Sink 1
+    2300064: Stool
+    2300066: Time
+    2300068: w1
+    2300070: w1 1
+    2300072: w1 2
+    2300074: w1 3
+    2300076: w1 4
+    2300078: w1 5
+    3300000: Base
+    3300002: Blender
+    3300004: Blender_glass
+    3300006: Blender_lid
+    3300008: Button
+    3300010: Clock
+    3300012: Clock_knob
+    3300014: ctrl
+    3300016: ctrl1
+    3300018: Door
+    3300020: Fridge
+    3300022: Glass
+    3300024: glass
+    3300026: Handle
+    3300028: Handle1
+    3300030: Handle2
+    3300032: Handle3
+    3300034: Handle4
+    3300036: Handle5
+    3300038: Keypad
+    3300040: Knob
+    3300042: Knob1
+    3300044: Knob2
+    3300046: Knob3
+    3300048: Knob4
+    3300050: Microwave
+    3300052: oven
+    3300054: pCube1
+    3300056: pCube2
+    3300058: Seat
+    3300060: Sink
+    3300062: Sink 1
+    3300064: Stool
+    3300066: Time
+    3300068: w1
+    3300070: w1 1
+    3300072: w1 2
+    3300074: w1 3
+    3300076: w1 4
+    3300078: w1 5
+    4300000: Sink
+    4300002: Handle
+    4300004: w1
+    4300006: Handle1
+    4300008: w1
+    4300010: ctrl1
+    4300012: ctrl
+    4300014: Sink
+    4300016: Stool
+    4300018: Base
+    4300020: Seat
+    4300022: Fridge
+    4300024: Handle2
+    4300026: w1
+    4300028: Handle3
+    4300030: w1
+    4300032: Blender
+    4300034: Blender_glass
+    4300036: Blender_lid
+    4300038: Button
+    4300040: Microwave
+    4300042: Glass
+    4300044: Door
+    4300046: Handle4
+    4300048: w1
+    4300050: Time
+    4300052: Keypad
+    4300054: oven
+    4300056: Knob
+    4300058: Knob1
+    4300060: Knob2
+    4300062: Knob3
+    4300064: Knob4
+    4300066: Handle5
+    4300068: w1
+    4300070: glass
+    4300072: Clock
+    4300074: Clock_knob
+    4300076: pCube1
+    4300078: pCube2
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
