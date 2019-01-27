@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.collider.CompareTag("Lava"))
         {
-            m_health -= collision.collider.GetComponent<FloorIsLava>().damageDealt;
+            m_health -= collision.collider.GetComponent<FloorIsLavaDamageCircle>().damageDealt;
             Debug.Log("Current Health" + m_health);
             //_audioSource.Play();
         }
