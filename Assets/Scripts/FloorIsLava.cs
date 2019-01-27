@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloorIsLava : MonoBehaviour
+public class FloorIsLava : PowerupsBaseClass
 {
     public float damageRadius = 100;
     public float damageDealt = 50;
 
-    void Start()
+    public override void Activate(Vector3 position)
     {
-        //this.transform.GetComponent<MeshCollider>().radius = damageRadius;
-    }
-
-    void OnCollisionStay(Collision collision)
-    {
-        //string n = collision.gameObject.name;
-        //Debug.Log(n);
+        base.Activate(position);
+        Instantiate(Resources.Load<GameObject>("FloorIsLavaCircle"), position, Quaternion.identity);
+        Debug.Log("It's been used");
     }
 }

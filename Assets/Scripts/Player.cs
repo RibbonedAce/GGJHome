@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         m_MouseLook.LookRotation(transform, Camera.main.transform);
         if (Input.GetButtonDown("Mouse2"))
         {
-        
+            Debug.Log("Use powerup");
         }
     }
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         Move();
         if(Input.GetButtonDown("Jump"))
         {
-            Debug.Log("Space was hit");
+            //Debug.Log("Space was hit");
             Jump();
         }
         m_MouseLook.UpdateCursorLock();
@@ -53,7 +53,17 @@ public class Player : MonoBehaviour
         if(hit)
         {
             m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.VelocityChange);
-            Debug.Log("There was a hit");
+            //Debug.Log("There was a hit");
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("FiLPowerup"))
+        {
+            Debug.Log("Pickup");
+            Destroy(other.gameObject);
+            //PowerupList.UpdateList(other.);
         }
     }
 }
