@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
+    public static WaveSpawner instance;
     List<Transform> transformList = new List<Transform>();
     public int currentWave = 1;
+    public bool finished = false;
 
     public int enemiesRemaining
     {
@@ -20,6 +22,7 @@ public class WaveSpawner : MonoBehaviour
     void Start()
     {
         fillTList();
+        instance = this;
     }
 
     // Update is called once per frame
@@ -54,6 +57,10 @@ public class WaveSpawner : MonoBehaviour
             currentWave++;
             //Enable next Wave
             transformList[currentWave - 1].gameObject.SetActive(true);
+        }
+        else
+        {
+            finished = true;
         }
     }
 }

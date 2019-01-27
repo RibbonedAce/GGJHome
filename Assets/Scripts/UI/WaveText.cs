@@ -46,6 +46,7 @@ public class WaveText : MonoBehaviour
 	{
         _text = GetComponent<Text>();
         newWave = false;
+        currentWave = -1;
 	}
 	
 	/// <summary>

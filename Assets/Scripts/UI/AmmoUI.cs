@@ -39,8 +39,8 @@ public class AmmoUI : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-        _text = GetComponent<Text>();
-        _image = GetComponent<Image>();
+        _text = GetComponentInChildren<Text>();
+        _image = GetComponentInChildren<Image>();
 	}
 	
 	/// <summary>
@@ -60,7 +60,7 @@ public class AmmoUI : MonoBehaviour
         _text.text = string.Format("Clip: {0}", gun.m_clipSize);
 
         // Gun image
-        _image.color = gun.m_clipSize / gun.m_maxClipSize <= lowAmmoThreshold ? Color.red : Color.white;
+        _image.color = (float)gun.m_clipSize / gun.m_maxClipSize <= lowAmmoThreshold ? Color.red : Color.white;
 	}
 	
 	/// <summary>

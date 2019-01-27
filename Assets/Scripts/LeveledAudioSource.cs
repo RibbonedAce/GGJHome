@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class LeveledAudioSource : MonoBehaviour 
 {
     #region Variables
@@ -21,7 +22,7 @@ public class LeveledAudioSource : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-		
+        _audioSource = GetComponent<AudioSource>();	
 	}
 	
 	/// <summary>

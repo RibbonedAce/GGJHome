@@ -18,6 +18,11 @@ public class GameController : MonoBehaviour
     /// </summary>
     [SerializeField]
     private GameObject pauseMenu;
+
+    /// <summary>
+    /// <para>Whether the goal to move on has been met</para>
+    /// </summary>
+    private bool movingOn;
 	#endregion
 
 	#region Properties
@@ -74,6 +79,12 @@ public class GameController : MonoBehaviour
         {
             TogglePause();
         }
+
+        if (WaveSpawner.instance != null && WaveSpawner.instance.finished && !movingOn)
+        {
+            movingOn = true;
+            Invoke("GoToNextLevel", 5);
+        }
 	}
 	
 	/// <summary>
@@ -94,6 +105,14 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
         StartCoroutine(PerformQuit());
+    }
+
+    /// <summary>
+    /// Go to the next level
+    /// </summary>
+    public void GoToNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     /// <summary>

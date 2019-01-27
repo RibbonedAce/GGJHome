@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     public float m_maxHealth;
 
+    public AudioClip hurtClip;
     private AudioSource _audioSource;
 
     // Start is called before the first frame update
@@ -26,12 +27,13 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Enemy"))
         {
             m_playerHealth -= collision.collider.GetComponent<Enemy>().m_damage;
             Debug.Log("Current Health" + m_playerHealth);
+            _audioSource.clip = hurtClip;
             _audioSource.Play();
         }
     }
