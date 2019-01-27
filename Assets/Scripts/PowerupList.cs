@@ -35,6 +35,14 @@ public class PowerupList : MonoBehaviour
             UpdateList(new FloorIsLava());
             Destroy(other.gameObject);
         }
+        else if (other.CompareTag("Powerup") && (other.gameObject.name == "PABPowerup"))
+        {
+            Debug.Log("Added PABPowerup");
+            UpdateList(new Peekaboo());
+            Destroy(other.gameObject);
+        }
+
+
         //if((collision.gameObject.name == "Peakaboo") && collision.collider.CompareTag("Powerup"))
         //{
 

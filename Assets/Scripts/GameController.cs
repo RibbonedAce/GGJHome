@@ -23,6 +23,11 @@ public class GameController : MonoBehaviour
     /// <para>Whether the goal to move on has been met</para>
     /// </summary>
     private bool movingOn;
+
+    /// <summary>
+    /// <para>The coroutine keeping track of invisibility</para>
+    /// </summary>
+    private Coroutine invisibleRoutine;
 	#endregion
 
 	#region Properties
@@ -103,6 +108,19 @@ public class GameController : MonoBehaviour
 	
 	#region Methods
     /// <summary>
+    /// Turn invisible for a set period of time
+    /// </summary>
+    /// <param name="time">The time to turn invisible</param>
+    public void TurnInvisible(float time)
+    {
+        if (invisibleRoutine != null)
+        {
+            StopCoroutine(invisibleRoutine);
+        }
+        invisibleRoutine = StartCoroutine(GoInvisible(time));
+    }
+
+    /// <summary>
     /// Quit to the main menu
     /// </summary>
 	public void QuitToMenu()
@@ -133,6 +151,18 @@ public class GameController : MonoBehaviour
 	#endregion
 	
 	#region Coroutines
+    /// <summary>
+    /// Go invisible for a set period of time
+    /// </summary>
+    /// <param name="time">The time to turn invisible</param>
+    /// <returns></returns>
+    private IEnumerator GoInvisible(float time)
+    {
+        Invisible = true;
+        yield return new WaitForSeconds(time);
+        Invisible = false;
+    }
+
     /// <summary>
     /// Do things then quit
     /// </summary>
