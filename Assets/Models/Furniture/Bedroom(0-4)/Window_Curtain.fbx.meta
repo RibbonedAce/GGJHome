@@ -60,6 +60,17 @@ ModelImporter:
     4300016: pCube16
     4300018: pCube17
     4300020: pCube18
+    6400000: curtain_rod
+    6400002: Curtains
+    6400004: Glass
+    6400006: pCube14
+    6400008: pCube15
+    6400010: pCube16
+    6400012: pCube17
+    6400014: pCube18
+    6400016: pCylinder2
+    6400018: pCylinder3
+    6400020: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -93,7 +104,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -111,7 +122,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

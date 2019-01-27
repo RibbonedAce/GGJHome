@@ -49,6 +49,15 @@ ModelImporter:
     4300012: Headboard
     4300014: Bars3
     4300016: Bars2
+    6400000: Bars2
+    6400002: Bars3
+    6400004: //RootNode
+    6400006: Headboard
+    6400008: Headboard1
+    6400010: Mattress
+    6400012: Pillow
+    6400014: Rod
+    6400016: Rod1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -82,7 +91,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -100,7 +109,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
