@@ -8,10 +8,13 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     public float m_maxHealth;
 
+    private AudioSource _audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         m_playerHealth = m_maxHealth;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
         {
             m_playerHealth -= collision.collider.GetComponent<Enemy>().m_damage;
             Debug.Log("Current Health" + m_playerHealth);
+            _audioSource.Play();
         }
     }
 }

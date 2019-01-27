@@ -109,7 +109,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &8756906796708321760
 MonoBehaviour:
@@ -124,7 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_health: 5
-  m_damage: 50
+  m_damage: 25
+  postDeathEffect: {fileID: 3368822048604275101, guid: bbc5246eee844fa4eb2a53b2b72cfa8f,
+    type: 3}
 --- !u!114 &8756906796708321761
 MonoBehaviour:
   m_ObjectHideFlags: 0
