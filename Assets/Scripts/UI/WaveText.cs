@@ -62,8 +62,23 @@ public class WaveText : MonoBehaviour
 	/// <summary>
 	private void Update() 
 	{
-        // Announce new wave if one starting, else enemies remaining
-        _text.text = newWave ? string.Format("Wave {0}", currentWave) : string.Format("{0} enemies remaining", waveSpawner.enemiesRemaining);
+        // Display finish message
+        if (waveSpawner.finished)
+        {
+            _text.text = "Level complete!";
+        }
+
+        // Announce new wave
+        else if (newWave)
+        {
+            _text.text = string.Format("Wave {0}", currentWave);
+        }
+
+        // Show remaining enemies
+        else
+        {
+            _text.text = string.Format("{0} enemies remaining", waveSpawner.enemiesRemaining);
+        }
 
         // Display new wave if one spawns
         if (currentWave != waveSpawner.currentWave)
