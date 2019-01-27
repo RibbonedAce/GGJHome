@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: dce6e242be380cc4bb06bfbf3b69ef34
-=======
-guid: fb247d9d64bc9b74fa8b5e248fba98f9
->>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -23,12 +19,6 @@ ModelImporter:
     4300000: Plant_Base
     4300002: Tree
     4300004: Root
-<<<<<<< Updated upstream
-=======
-    6400000: //RootNode
-    6400002: Root
-    6400004: Tree
->>>>>>> Stashed changes
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -64,11 +54,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-<<<<<<< Updated upstream
     addColliders: 0
-=======
-    addColliders: 1
->>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -86,13 +72,8 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< Updated upstream
     useFileScale: 1
     previousCalculatedGlobalScale: 0.01
-=======
-    useFileScale: 0
-    previousCalculatedGlobalScale: 1
->>>>>>> Stashed changes
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

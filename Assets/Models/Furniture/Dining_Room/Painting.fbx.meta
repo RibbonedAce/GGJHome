@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 71366c6fc8de4114787f0b864c84ae07
-=======
-guid: da72f3fcbdc8cc44fb2aef67a247bdb0
->>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -18,11 +14,7 @@ ModelImporter:
     3300002: //RootNode
     4300000: Painting
     4300002: Canvas
-<<<<<<< Updated upstream
-=======
-    6400000: Canvas
-    6400002: //RootNode
->>>>>>> Stashed changes
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -56,11 +48,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-<<<<<<< Updated upstream
     addColliders: 0
-=======
-    addColliders: 1
->>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -78,13 +66,9 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< Updated upstream
     useFileScale: 1
-=======
-    useFileScale: 0
->>>>>>> Stashed changes
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -111,7 +95,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

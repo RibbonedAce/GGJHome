@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 98b230b9cbefe814c8b106487b1746d9
-=======
-guid: 19d89471c41347a4f80ae1419fa65c37
->>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -13,10 +9,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cup
-<<<<<<< Updated upstream
-=======
-    6400000: //RootNode
->>>>>>> Stashed changes
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -50,11 +43,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-<<<<<<< Updated upstream
     addColliders: 0
-=======
-    addColliders: 1
->>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -72,13 +61,9 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< Updated upstream
     useFileScale: 1
-=======
-    useFileScale: 0
->>>>>>> Stashed changes
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -105,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
