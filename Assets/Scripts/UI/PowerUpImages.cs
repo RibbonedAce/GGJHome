@@ -45,9 +45,9 @@ public class PowerUpImages : MonoBehaviour
 	/// <summary>
 	private void Update() 
 	{
-		for (int i = 0; i < 3; ++i)
+		for (int i = 0; i < list.pList.Count; ++i)
         {
-            if (list.pList[i] != null)
+            if (list.pList[i] != null && list.pList[i].icon != null)
             {
                 images[i].sprite = list.pList[i].icon;
             }
