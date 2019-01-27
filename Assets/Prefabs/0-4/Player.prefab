@@ -133,7 +133,7 @@ MonoBehaviour:
     type: 3}
   m_clipSize: 0
   m_maxClipSize: 5
-  shootClip: {fileID: 8300000, guid: 84259fd14c26f42599b06b5367aad0f9, type: 3}
+  shootClip: {fileID: 8300000, guid: 3636a7b310704fb40b8d3fb263efebee, type: 3}
   reloadClip: {fileID: 8300000, guid: 344058716c22b40289e08e7fdaedf8c8, type: 3}
 --- !u!82 &9090472833116657815
 AudioSource:

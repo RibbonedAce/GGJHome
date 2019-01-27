@@ -480,7 +480,7 @@ MonoBehaviour:
     type: 3}
   m_clipSize: 0
   m_maxClipSize: 5
-  shootClip: {fileID: 8300000, guid: 84259fd14c26f42599b06b5367aad0f9, type: 3}
+  shootClip: {fileID: 8300000, guid: 65aecbc498bc11f438c06e267a9c5bc7, type: 3}
   reloadClip: {fileID: 8300000, guid: 344058716c22b40289e08e7fdaedf8c8, type: 3}
 --- !u!82 &1831857768033886414
 AudioSource:
@@ -677,7 +677,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.76
       objectReference: {fileID: 0}
-    - target: {fileID: 7605347181050331445, guid: 69ba27bc9687a0d45a60fac8283c2dac,
+    - target: {fileID: 2848221829873774537, guid: 69ba27bc9687a0d45a60fac8283c2dac,
         type: 3}
       propertyPath: m_Layer
       value: 10
@@ -687,7 +687,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 2848221829873774537, guid: 69ba27bc9687a0d45a60fac8283c2dac,
+    - target: {fileID: 7605347181050331445, guid: 69ba27bc9687a0d45a60fac8283c2dac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338401418098440987, guid: 69ba27bc9687a0d45a60fac8283c2dac,
         type: 3}
       propertyPath: m_Layer
       value: 10
@@ -698,11 +703,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8844770233975921363, guid: 69ba27bc9687a0d45a60fac8283c2dac,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1338401418098440987, guid: 69ba27bc9687a0d45a60fac8283c2dac,
         type: 3}
       propertyPath: m_Layer
       value: 10
