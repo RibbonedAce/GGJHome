@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 3232aaedc1126924ca53f9591e2d8615
+=======
+guid: 57b7ab552015adf439b37257259c32f6
+>>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -29,6 +33,14 @@ ModelImporter:
     4300004: w1
     4300006: Handle1
     4300008: w1
+<<<<<<< Updated upstream
+=======
+    6400000: //RootNode
+    6400002: Handle
+    6400004: Handle1
+    6400006: w1
+    6400008: w1 1
+>>>>>>> Stashed changes
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,7 +74,11 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
+<<<<<<< Updated upstream
     addColliders: 0
+=======
+    addColliders: 1
+>>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -80,7 +96,11 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+<<<<<<< Updated upstream
     useFileScale: 1
+=======
+    useFileScale: 0
+>>>>>>> Stashed changes
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

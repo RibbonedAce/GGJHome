@@ -1,34 +1,29 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 7ee35ed7006888548b31bfa58378f45f
-=======
-guid: fcd2619e499f9d84cabca3dde748c230
->>>>>>> Stashed changes
+guid: 5e1e930d7071b0e46ac9c9c0a0c482b5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Root
-    100004: Tree
+    100002: Blender_glass
+    100004: Blender_lid
+    100006: Button
     400000: //RootNode
-    400002: Root
-    400004: Tree
+    400002: Blender_glass
+    400004: Blender_lid
+    400006: Button
     2100000: lambert1
     2300000: //RootNode
-    2300002: Root
-    2300004: Tree
+    2300002: Blender_glass
+    2300004: Blender_lid
+    2300006: Button
     3300000: //RootNode
-    3300002: Root
-    3300004: Tree
-    4300000: Drawer_Plant
-    4300002: Tree
-    4300004: Root
-<<<<<<< Updated upstream
-=======
-    6400000: //RootNode
-    6400002: Root
-    6400004: Tree
->>>>>>> Stashed changes
+    3300002: Blender_glass
+    3300004: Blender_lid
+    3300006: Button
+    4300000: Blender
+    4300002: Blender_glass
+    4300004: Blender_lid
+    4300006: Button
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,11 +57,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-<<<<<<< Updated upstream
     addColliders: 0
-=======
-    addColliders: 1
->>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -84,11 +75,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< Updated upstream
     useFileScale: 1
-=======
-    useFileScale: 0
->>>>>>> Stashed changes
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

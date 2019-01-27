@@ -1,34 +1,35 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 7ee35ed7006888548b31bfa58378f45f
-=======
-guid: fcd2619e499f9d84cabca3dde748c230
->>>>>>> Stashed changes
+guid: 835006f250c244c4abc90e82d9159714
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Root
-    100004: Tree
+    100002: Handle2
+    100004: Handle3
+    100006: w1
+    100008: w1 1
     400000: //RootNode
-    400002: Root
-    400004: Tree
+    400002: Handle2
+    400004: Handle3
+    400006: w1
+    400008: w1 1
     2100000: lambert1
+    2100002: lambert2
     2300000: //RootNode
-    2300002: Root
-    2300004: Tree
+    2300002: Handle2
+    2300004: Handle3
+    2300006: w1
+    2300008: w1 1
     3300000: //RootNode
-    3300002: Root
-    3300004: Tree
-    4300000: Drawer_Plant
-    4300002: Tree
-    4300004: Root
-<<<<<<< Updated upstream
-=======
-    6400000: //RootNode
-    6400002: Root
-    6400004: Tree
->>>>>>> Stashed changes
+    3300002: Handle2
+    3300004: Handle3
+    3300006: w1
+    3300008: w1 1
+    4300000: Fridge
+    4300002: Handle2
+    4300004: w1
+    4300006: Handle3
+    4300008: w1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,11 +63,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-<<<<<<< Updated upstream
     addColliders: 0
-=======
-    addColliders: 1
->>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -84,11 +81,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< Updated upstream
     useFileScale: 1
-=======
-    useFileScale: 0
->>>>>>> Stashed changes
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

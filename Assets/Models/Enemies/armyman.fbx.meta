@@ -1,34 +1,30 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 7ee35ed7006888548b31bfa58378f45f
-=======
-guid: fcd2619e499f9d84cabca3dde748c230
->>>>>>> Stashed changes
+guid: 8359052a9420a484586e14652769855a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Root
-    100004: Tree
+    100002: pCube1
+    100004: pCube2
+    100006: polySurface1
+    100008: polySurface2
+    100010: transform1
     400000: //RootNode
-    400002: Root
-    400004: Tree
+    400002: pCube1
+    400004: pCube2
+    400006: polySurface1
+    400008: polySurface2
+    400010: transform1
     2100000: lambert1
-    2300000: //RootNode
-    2300002: Root
-    2300004: Tree
-    3300000: //RootNode
-    3300002: Root
-    3300004: Tree
-    4300000: Drawer_Plant
-    4300002: Tree
-    4300004: Root
-<<<<<<< Updated upstream
-=======
-    6400000: //RootNode
-    6400002: Root
-    6400004: Tree
->>>>>>> Stashed changes
+    2300000: pCube2
+    2300002: polySurface1
+    2300004: polySurface2
+    3300000: pCube2
+    3300002: polySurface1
+    3300004: polySurface2
+    4300000: polySurface1
+    4300002: polySurface2
+    4300004: pCube2
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,11 +58,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-<<<<<<< Updated upstream
     addColliders: 0
-=======
-    addColliders: 1
->>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -84,11 +76,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< Updated upstream
     useFileScale: 1
-=======
-    useFileScale: 0
->>>>>>> Stashed changes
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

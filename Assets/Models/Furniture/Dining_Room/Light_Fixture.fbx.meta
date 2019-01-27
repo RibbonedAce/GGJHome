@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 470f9972391bd7d44b9f862e76eacb63
+=======
+guid: 0a0ee26e1dc1c264ab5637c6328c32c5
+>>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -39,6 +43,16 @@ ModelImporter:
     4300008: Lamp_part
     4300010: Lamp_part1
     4300012: Lamp_part2
+<<<<<<< Updated upstream
+=======
+    6400000: Lamp_part
+    6400002: Lamp_part1
+    6400004: Lamp_part2
+    6400006: //RootNode
+    6400008: Rod
+    6400010: Rod2
+    6400012: Rod3
+>>>>>>> Stashed changes
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -72,7 +86,11 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
+<<<<<<< Updated upstream
     addColliders: 0
+=======
+    addColliders: 1
+>>>>>>> Stashed changes
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -90,7 +108,11 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+<<<<<<< Updated upstream
     useFileScale: 1
+=======
+    useFileScale: 0
+>>>>>>> Stashed changes
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
