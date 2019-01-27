@@ -50,6 +50,15 @@ ModelImporter:
     4300012: Handle5
     4300014: w1
     4300016: glass
+    6400000: glass
+    6400002: Handle5
+    6400004: Knob
+    6400006: Knob1
+    6400008: Knob2
+    6400010: Knob3
+    6400012: Knob4
+    6400014: //RootNode
+    6400016: w1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -83,7 +92,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -101,7 +110,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
