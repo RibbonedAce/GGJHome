@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
     {
         m_rigidbody = this.GetComponent<Rigidbody>();
         m_rigidbody.AddForce(transform.forward * m_speed, ForceMode.VelocityChange);
-        Destroy(gameObject, 7f);
+        Destroy(gameObject, 5f);
 
         m_rigidbody.MovePosition(m_rigidbody.position + transform.forward * Input.GetAxis("Vertical"));
         m_rigidbody.MovePosition(m_rigidbody.position + transform.right * Input.GetAxis("Horizontal"));

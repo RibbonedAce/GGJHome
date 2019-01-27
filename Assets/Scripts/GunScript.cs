@@ -5,31 +5,56 @@ using UnityEngine;
 public class GunScript : MonoBehaviour
 {
     public GameObject projectile;
-    //public float speed = 20;
 
+    public int m_clipSize;
+    public int m_maxClipSize = 5;
+    bool m_reloading = false;
 
-    // Start is called before the first frame update
     void Start()
     {
+        m_clipSize = m_maxClipSize;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButtonDown("Fire1"))
+        if (m_clipSize == 0 && !m_reloading)
         {
+            Debug.Log("Reloading...");
+            m_reloading = true;
+            StartCoroutine(reloadC());
+            //Invoke("Reload", 2);
+            Debug.Log("Done Reloading");
+        }
+        if (Input.GetButtonDown("Fire1") && m_clipSize != 0 && !m_reloading)
+        {
+            //Debug.Log("Shooting");
+            DecreaseClip();
             Shoot();
         }
+    }
+
+    IEnumerator reloadC()
+    {
+        yield return new WaitForSeconds(2);
+        Reload();
+        m_reloading = false;
     }
 
     void Shoot()
     {
         //Shoot in the forward direction of this object
-        //Vector3 fwdDirection = this.transform.forward;
-
         Instantiate(projectile, this.transform.position, transform.rotation);
-
     }
 
+    void DecreaseClip()
+    {
+        m_clipSize--;
+    }
+
+    void Reload()
+    {
+        m_clipSize = m_maxClipSize;
+        //m_reloading = false;
+    }
 }
