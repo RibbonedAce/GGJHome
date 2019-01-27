@@ -44,6 +44,14 @@ ModelImporter:
     4300010: pTorus3
     4300012: pTorus4
     4300014: pCube2
+    6400000: //RootNode
+    6400002: pCube2
+    6400004: pTorus1
+    6400006: pTorus3
+    6400008: pTorus3 1
+    6400010: pTorus4
+    6400012: pTorus4 1
+    6400014: pTorus5
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -77,7 +85,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -95,7 +103,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
