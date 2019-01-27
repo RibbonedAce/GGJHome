@@ -6,7 +6,15 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     List<Transform> transformList = new List<Transform>();
-    int currentWave = 1;
+    public int currentWave = 1;
+
+    public int enemiesRemaining
+    {
+        get
+        {
+            return transformList[currentWave - 1].childCount;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

@@ -3,26 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour 
+public class AmmoUI : MonoBehaviour 
 {
     #region Variables
     /// <summary>
-    /// <para>The health to keep track of</para>
+    /// <para>The gun script to get ammo info from</para>
     /// </summary>
     [SerializeField]
-    private PlayerHealth playerHealth;
+    private GunScript gun;
+    
+    /// <summary>
+    /// <para>When to change the image to show low ammo</para>
+    /// </summary>
+    [SerializeField]
+    private float lowAmmoThreshold;
 
     /// <summary>
-    /// <para>The slider to show how much health is left</para>
+    /// <para>The Text component on a child</para>
     /// </summary>
-    [SerializeField]
-    private Slider slider;
-
+    private Text _text;
+    
     /// <summary>
-    /// <para>The slider to show how much health is missing</para>
+    /// <para>The Image component on a child</para>
     /// </summary>
-    [SerializeField]
-    private Slider inverseSlider;
+    private Image _image;
 	#endregion
 
 	#region Properties
@@ -35,7 +39,8 @@ public class HealthBar : MonoBehaviour
 	/// <summary>
 	private void Awake() 
 	{
-
+        _text = GetComponent<Text>();
+        _image = GetComponent<Image>();
 	}
 	
 	/// <summary>
@@ -51,8 +56,11 @@ public class HealthBar : MonoBehaviour
 	/// <summary>
 	private void Update() 
 	{
-        slider.value = playerHealth.m_playerHealth / playerHealth.m_maxHealth;
-        inverseSlider.value = 1 - slider.value;
+        // Ammo text
+        _text.text = string.Format("Clip: {0}", gun.m_clipSize);
+
+        // Gun image
+        _image.color = gun.m_clipSize / gun.m_maxClipSize <= lowAmmoThreshold ? Color.red : Color.white;
 	}
 	
 	/// <summary>
