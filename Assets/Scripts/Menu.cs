@@ -6,16 +6,10 @@ public class Menu : MonoBehaviour
 {
     #region Variables
     /// <summary>
-    /// <para>The locations of the camera in different menus</para>
+    /// <para>The locations/rotations of the camera in different menus</para>
     /// </summary>
     [SerializeField]
-    private Vector3[] cameraPositions;
-
-    /// <summary>
-    /// <para>The eulers for the rotation of the camera in different menus</para>
-    /// </summary>
-    [SerializeField]
-    private Vector3[] cameraAngles;
+    private Transform[] cameraTransforms;
 
     /// <summary>
     /// <para>The objects to click on for transitions</para>
@@ -57,8 +51,8 @@ public class Menu : MonoBehaviour
 	{
         // Set camera and object click to first menu
         menuIndex = 1;
-        Camera.main.transform.position = cameraPositions[menuIndex];
-        Camera.main.transform.rotation = Quaternion.Euler(cameraAngles[menuIndex]);
+        Camera.main.transform.position = cameraTransforms[menuIndex].position;
+        Camera.main.transform.rotation = cameraTransforms[menuIndex].rotation;
 
         // Set first set of clickable objects
         for (int i = 0; i < clickObjects.Length; ++i)
@@ -122,17 +116,16 @@ public class Menu : MonoBehaviour
     /// <returns>The time it takes to transition twice</returns>
     private IEnumerator TransitionMenu()
     {
-        yield return StartCoroutine(MoveCamera(cameraPositions[0], Quaternion.Euler(cameraAngles[0])));
-        yield return StartCoroutine(MoveCamera(cameraPositions[menuIndex], Quaternion.Euler(cameraAngles[menuIndex])));
+        yield return StartCoroutine(MoveCamera(cameraTransforms[0]));
+        yield return StartCoroutine(MoveCamera(cameraTransforms[menuIndex]));
     }
 
     /// <summary>
     /// Move the camera to a new position over time
     /// </summary>
-    /// <param name="newPos">The new position to move the camera to</param>
-    /// <param name="newRot">The new rotation to move the camera to</param>
+    /// <param name="newTran">The new transform to move the camera to</param>
     /// <returns>The time it takes to transition</returns>
-	private IEnumerator MoveCamera(Vector3 newPos, Quaternion newRot)
+	private IEnumerator MoveCamera(Transform newTran)
     {
         // Set up
         transitioning = true;
@@ -155,8 +148,8 @@ public class Menu : MonoBehaviour
         for (float t = 0f; t < 1f / cameraSpeed; t += Time.deltaTime)
         {
             float current = Utils.SineCurve(t * cameraSpeed);
-            camTransform.position = Vector3.Lerp(oldPos, newPos, current);
-            camTransform.rotation = Quaternion.Slerp(oldRot, newRot, current);
+            camTransform.position = Vector3.Lerp(oldPos, newTran.position, current);
+            camTransform.rotation = Quaternion.Slerp(oldRot, newTran.rotation, current);
             yield return null;
         }
 
@@ -169,8 +162,8 @@ public class Menu : MonoBehaviour
                 c.enabled = true;
             }
         }
-        camTransform.position = newPos;
-        camTransform.rotation = newRot;
+        camTransform.position = newTran.position;
+        camTransform.rotation = newTran.rotation;
         transitioning = false;
     }
 	#endregion
