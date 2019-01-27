@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class FloorIsLava : PowerupsBaseClass
 {
-    public float damageRadius = 100;
-    public float damageDealt = 50;
-
     public override void Activate(Vector3 position)
     {
         base.Activate(position);

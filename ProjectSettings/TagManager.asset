@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Powerup
+  - FxTemporaire
+  - Lava
   layers:
   - Default
   - TransparentFX
