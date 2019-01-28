@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3368822048604275100}
   - component: {fileID: 8181001210666681145}
   m_Layer: 0
-  m_Name: DeathEffect
+  m_Name: DeathEffect 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 278f7454bb5924ae98bd0c29d278cba5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c1338812bb6db4948bf88f48d2f7879b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

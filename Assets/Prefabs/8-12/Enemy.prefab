@@ -79,7 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_health: 5
   m_damage: 25
-  postDeathEffect: {fileID: 3368822048604275101, guid: bbc5246eee844fa4eb2a53b2b72cfa8f,
+  postDeathEffect: {fileID: 3368822048604275101, guid: af07f3968e7d3774ba2e1a63d8135319,
     type: 3}
   target: {fileID: 0}
 --- !u!195 &6010542196340520791
